@@ -6,7 +6,8 @@ const usersSchema = new Schema({
     mobileNumber : {type:Number, required:true},
     mail : {type:String, required:true},
     password : {type:String, required:true},
-    resetToken : {type:String, upsert:true}
+    resetToken : {type:String, upsert:true},
+    shortenUrl : {type:Array, upsert:true}
 })
 
 module.exports = mongoose.model("users",usersSchema);

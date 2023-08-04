@@ -11,7 +11,7 @@ loginRouter.post("/", async (req, res, next) => {
         const isMatching = await comparePasswords(password, response.password);
         if (isMatching) {
           const newToken = generateToken({
-            name: response.name,
+            name: response.fullName,
             role: ['admin']
           },
             `${process.env.JWT_SECRET_KEY}`

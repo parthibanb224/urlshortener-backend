@@ -11,5 +11,7 @@ APP_SERVER.use('/users', require('./controllers/users.controller'));
 APP_SERVER.use('/login', require('./controllers/Login.controller'));
 APP_SERVER.use('/forgot', require('./controllers/Forgot.controller'));
 APP_SERVER.use('/reset', require('./controllers/reset.controller'));
+APP_SERVER.use('/shortenUrl', require('./controllers/ShortenUrl.controller'));
+APP_SERVER.use('/userActivities', require('./controllers/UserActivities.controller'));
 
 module.exports = APP_SERVER;
